@@ -1,0 +1,68 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/stylesheet.css">
+    <script src="https://kit.fontawesome.com/a02f0ac4bb.js" crossorigin="anonymous"></script>
+    <title>Registration Form</title>
+</head>
+
+<body>
+    <section class="contact-form">
+        <form action="" class="form">
+            <div class="form-group">
+                <label for="username">Name : </label>
+                <input type="text" name="" id="username" required placeholder="Enter Your Name">
+
+                <label for="age">Age : </label>
+                <input type="number" name="" id="age" required placeholder="Enter Your Age">
+
+
+                <label for="email">Date :</label>
+                <input type="text" placeholder="MM/DD/YYYY" onfocus="(this.type='date')" id="date">
+                <label for="gender"> Select you gender</label>
+
+
+                <select name="gender" id="Gender">
+                    <option value="none" selected>Gender</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">other</option>
+                </select>
+
+
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="Enter Your Password">
+
+                <label for="cnfrm-password">Confirm Password</label>
+                <input type="password" id="cnfrm-password" placeholder="Confirm password here">
+
+                <p id="message"></p>
+                <input type="button" onclick="checkPassword()" value="SUBMIT" />
+
+                <table id="show">
+                    <thead>
+                        <tr>
+                        <th>
+                            User Name
+                        </th>
+                        <th>Age</th>
+                        <th>Date</th>
+                        <th>Gender</th>
+                    </tr>
+                    </thead>
+                </table>
+
+        </form>
+        </div>
+
+
+        <script src="script.js"></script>
+
+      
+    </section>
+</body>
+
+</html>
